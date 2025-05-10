@@ -35,7 +35,7 @@
     <div class="col-md-6">
       <label for="aquisition" class="form-label">Aquisição</label>
       <input type="date" name="aquisition" id="aquisition" class="form-control"
-             value="{{ book.aquisition }}">
+             value="{{ book.aquisition|date:'Y-m-d' }}">
     </div>
   
     <div class="col-md-6">
