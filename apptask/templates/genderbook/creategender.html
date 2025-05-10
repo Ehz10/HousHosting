@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Adicionar Género{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Adicionar Género</h2>
+
+<form method="post" class="row g-3 p-4 border rounded shadow-sm bg-light">
+    {% csrf_token %}
+
+    <div class="col-12 ">
+        <label for="id_name" class="form-label">Nome do Género</label>
+        <input type="text" id="id_name" name="name" class="form-control" placeholder="Introduza o nome do género" required>
+    </div>
+
+    <div class="col-12 d-flex justify-content-end gap-2 mt-3">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="{% url 'genders' %}" class="btn btn-outline-danger">Cancelar</a>
+    </div>
+</form>
+{% endblock %}
