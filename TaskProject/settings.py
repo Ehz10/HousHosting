@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-   #'househosting.onrender.com', '127.0.0.1'
+   'househosting.onrender.com', '127.0.0.1'
 ]
 
 
