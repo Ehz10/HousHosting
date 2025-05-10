@@ -1,4 +1,4 @@
 gunicorn
-djangopsycopg
+psycopg2-binary
 python-decouple
 supabase
